@@ -1,0 +1,184 @@
+body{
+	position:relative;
+	margin:0 auto;
+	width:640px;
+}
+div, span, p{
+	box-sizing:border-box;
+} 
+#wrap{
+	position:relative;
+}
+#play {
+	z-index:0;
+	position:relative;
+	height:480px;
+	width:640px;
+}
+
+div.multi.trump{
+	width:45px;
+	overflow:hidden;
+	position:absolute;
+	bottom:2px;
+}
+div.multi span{
+	height:10px;
+	width:10px;
+	float:left;
+	margin:0 0 2px 4px;
+	position:relative;
+	border-radius:5px;
+	border-style:solid;
+}
+div.trump span.trump{
+	background:white;
+}
+#opponent, #battle, #player{
+	position:absolute;
+	height:160px;
+	width:640px;
+	left:0;
+}
+#opponent{
+	top:0;
+}
+#battle{
+	top:160px;
+}
+#player{
+	top:320px;
+}
+#trumps{
+	width:140px;
+	height:160px; float:left;
+}
+#trumps .multi{
+	display:block;
+    margin: 5px;
+    overflow: hidden;	
+}
+#opponent-discard,#opponent-play{
+	width:125px;
+	height:160px; float:left;
+	padding:5px;
+}
+#player-discard,#player-play{
+	width:125px;
+	height:160px; float:left;
+	padding:5px;
+}
+#player-discard, #player-play, #player{
+	background:lightblue;
+}
+#opponent-discard, #opponent-play, #opponent{
+	background:lightgreen;
+}
+#opponent-play .card, #player-discard .card{
+	float:right;
+	margin-right:0px;
+}
+#player-sidebar,#opponent-sidebar{
+	width:140px;
+	height:160px;
+	float:right;
+	background:white;
+}
+.card, .draw{
+	background:white;
+	border-radius:10px;
+	height:150px;
+	width:100px;
+	box-shadow:2px 2px 4px -1px black;
+	position:relative;
+	box-sizing:border-box;
+	margin:2px 10px 2px 2px;
+	float:left;
+	border: 5px solid;
+}
+.card.clickable{
+	box-shadow:0 0 2px 2px yellow;
+	cursor:pointer;
+}
+.card .suit{
+	border-style:solid;
+	border-color:inherit;
+	border-radius:20px;
+	width:40px;
+	height:40px;
+	position:absolute;
+	top:45px;
+	left:20px;
+}
+.draw{
+	text-align:center;
+	float:right;
+}
+.W-card{
+	border-color:blue;
+}
+.s-W{
+	border-width:5px 20px 5px 5px;
+}
+span.t-W{
+	border-color:blue;
+	border-width:1px 5px 1px 1px;
+}
+.E-card{
+	border-color:brown;
+}
+.s-E{
+	border-width:5px 5px 20px 5px;
+}
+span.t-E{
+	border-color:brown;
+	border-width:1px 1px 5px 1px;	
+}
+.A-card{
+	border-color:gray;
+}
+.s-A{
+	border-width:20px 5px 5px 5px;
+}
+span.t-A{
+	border-color:gray;
+	border-width:5px 1px 1px 1px;	
+}
+.F-card{
+	border-color:red;
+}
+.s-F{
+	border-width:5px 5px 5px 20px;
+}
+span.t-F{
+	border-color:red;
+	border-width:1px 1px 1px 5px;
+}
+.infobox {
+	height:480px;
+	width:640px;
+	z-index:100;
+	top:0;
+	left:0;
+	position:absolute;
+	background:white;
+	border:3px solid blue;
+	border-radius:10px;
+}
+div.pointcontainer span.trump{
+	height:10px;
+	width:10px;
+	float:left;
+	margin:4px;
+	position:relative;
+	border-radius:5px;
+	border-style:solid;
+}
+.results{
+	padding:30px;
+	float:left;
+}
+.infobox h2{
+	clear:both;
+	padding:30px;
+}

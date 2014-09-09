@@ -1,0 +1,23 @@
+These were my notes. Not all feature made it into the game. 
+
+
+
+
+
+
+Burnout - When X trump dots have been played, that suit is considered "burned" and may not give out points (though specials still work.
+
+Games end when either all elements have been burned out or all cards played.
+
+Winning a trick gives you points based on the order in the trumps. 
+
+
+Fire - hot and fast. A lot of points around, so ends up at the top early, but likely to burn out first.
+Earth - Steady. Low points, but last to burn out.
+Water - Back and forth. Negative points?, reduce burnout chance.
+Air- ?
+
+Special Abilities:
+	Damage - discard cards
+	Lockout - can't play same suit
+	Mind wipe - Return X cards to draw deck from hand. (fewer choices, though still draw up to 3 in following turn)
