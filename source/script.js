@@ -489,8 +489,8 @@ function setup(){
 }
 function endgame(){
 	game_state = 'Z'; //End Game
-	player_score = playr.score;
-	opponent_score = oppt.score;
+	player_score = playr.score();
+	opponent_score = oppt.score();
 	player_deck.remove_hand_clickable();
 	opponent_deck.remove_hand_clickable();
 	var end_info = addnode('div','', document.getElementById('wrap'), 'infobox');
@@ -500,11 +500,11 @@ function endgame(){
 	addnode('h3','Player:',playerresults);
 	addnode('div','',playerresults).id = 'player_score';
 	game_mat.render_points(playr.points, 'player_score');		
-	addnode('span','Score:' + playr.score(),playerresults);
+	addnode('span','Score:' + player_score,playerresults);
 	addnode('h3','Opponent',opptresults);
 	addnode('div','',opptresults).id = 'opponent_score';
 	game_mat.render_points(oppt.points, 'opponent_score');
-	addnode('span','Score:' + oppt.score(),opptresults);
+	addnode('span','Score:' + opponent_score,opptresults);
 	
 	var winnertext = 'Player Wins.';
 	if (opponent_score > player_score){
